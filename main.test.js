@@ -1,6 +1,42 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+let greeting = 'Hello';
+let sum = 0;
+let prod = 0;
+
+function greet(name){
+  greeting = greeting + ' ' + name;
+}
+
+function sumOfTwo(a, b){
+  sum = a + b;
+}
+
+function multiply (a,b,c){
+  prod = a * b * c;
+}
+
+function sayHi(name){
+    let salutation = 'Hello ' + name + '!';
+  return salutation;
+}
+
+
+function returnWhatISay(sentence){
+  return (sentence);
+}
+
+function divide(a, b){
+  let result = a/b;
+  return result;
+}
+
+function remainder(a, b){
+  let result = a%b;
+  return result;
+}
+
 
 
 
@@ -55,8 +91,8 @@ if (typeof remainder === 'undefined') {
 
 describe('greet', () => {
   it(`multiplies x by the given parameter'`, () => {
-    greet('mess')
-    expect(greeting).toBe('Hello mess')
+    greet('mess');
+    expect(greeting).toBe('Hello mess');
   })
 });
 
